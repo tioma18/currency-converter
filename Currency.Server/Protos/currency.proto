@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "Currency";
+
+package Currency;
+
+// The service definition.
+service Currency {
+  // Convert currency into words
+  rpc Convert (ConvertRequest) returns (ConvertReply);
+}
+
+// The request message.
+message ConvertRequest {
+  string numberInput = 1;
+}
+
+// The response message.
+message ConvertReply {
+  string convertedOutput = 1;
+  bool isSuccess = 2;
+}

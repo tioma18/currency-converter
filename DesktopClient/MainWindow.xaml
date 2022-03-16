@@ -1,0 +1,16 @@
+﻿<Window x:Class="DesktopClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <StackPanel>
+        <Label HorizontalContentAlignment="Center" ToolTip="Max: 999 999 999,99">Type currency to convert:</Label>
+        <TextBox Name="Input" HorizontalContentAlignment="Center" ToolTip="Max: 999 999 999,99"
+                 PreviewTextInput="UIElement_OnPreviewTextInput"></TextBox>
+        <Button Click="ButtonBase_OnClick">Convert</Button>
+        <Label HorizontalContentAlignment="Center">Result</Label>
+        <TextBlock Name="Output" TextAlignment="Center" ></TextBlock>
+    </StackPanel>
+</Window>
